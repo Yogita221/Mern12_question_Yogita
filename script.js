@@ -270,13 +270,196 @@
 
 //Q19)- Accept a year and check if it a leap year or not (google to find out what's a leap year)
 
-let year =+prompt("enter year to cheak leap year")
-if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
-  console.log(`${year} is a leap year.`);
-} else {
-  console.log(`${year} is not a leap year.`);
-}
+// let year =+prompt("enter year to cheak leap year")
+// if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//   console.log(`${year} is a leap year.`);
+// } else {
+//   console.log(`${year} is not a leap year.`);
+// }
 
 //----------------------------------------------------------------------------------------------------------------------//
 
 //Q20)- Shop discount - Description on Graphic
+
+// let price = +prompt("Enter the price");
+
+// if(price <= 1000){
+//   console.log("Discounted price :", (price - (price * (0.1))))
+// }
+// else if(1000 > price && price <= 2000){
+//   console.log("Discounted price :", (price - (price * (0.2))))
+// }
+// else{
+//   console.log("Discounted price :", (price - (price * (0.3))))
+// }
+
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q22)- Accept an english alphabet from user and check if it is a consonent or a vowel;
+
+// let char = prompt("Enter an English alphabet");
+// if(char == 'a' || char == 'e' || char == 'o' || char == 'i' || char == 'u' 
+// || char == 'A' || char == 'E' || char == 'O' || char == 'I' || char == 'U'){
+//   console.log(`it is a ${char}  vowel`);
+// }else{
+//     console.log(`it is a ${char} Consonent`);
+// }
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q23) - Accept an integer and Print hello world n times
+
+// let n = prompt("Enter a number");  
+
+// for (let i = 0; i < n; i++) {
+//     console.log("Hello, World!");  
+// }
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q24)- Print natural number up to n. 
+   
+// let n = prompt("enter number to print  numbers"); 
+
+// for (let i = 1; i <= n; i++) {
+//     console.log(i);
+// }
+     
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q25)- Reverse for loop. Print n to 1.
+
+// let n = prompt("enter number to print  numbers"); 
+
+// for (let i = n; i >= 1; i--) {
+//     console.log(i);
+// }
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q26)- Take a number as input and print its table
+//       5 * 1 = 5
+//       5 * 2 = 10 ... up to 10 terms
+
+
+// let num = +prompt("Enter a number to print table");
+// for (let i = 1; i <= 10; i++) {
+//     console.log(`${num} * ${i} = ${num * i}`);
+// }
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q27) - sum upto n.
+
+// let n = prompt("enter number to add ");
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//   sum += i;
+// }
+// console.log(`sum of upto ${n} term is = ${sum}`);
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q28)- Factorial of a number
+
+// let n = prompt("enter number to find its factorial ");
+// let factorial=1;
+// for (let i = 1; i <= n; i++) {
+// factorial*=i;
+// }
+// console.log(factorial);
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q29)- Print the sum of all even & odd numbers in a range seperately.
+
+// let n = +prompt("enter number to sum of all even & odd numbers in a range seperately. ");
+// let even=0;
+// let odd=0;
+// for (let i = 1; i <= n; i++) {
+// if ( i%2 == 0 ) {
+//   even+=i;
+// } else {
+//   odd+=i;
+// }
+// }
+// console.log(`sum of even number is ${even}`);
+// console.log(`sum of odd number is ${odd}`);
+
+// ------------------------------------------------------------------------------------------------------------------------//
+
+//Q30)- Print all the factors of a number.
+
+// let n = +prompt("Enter the number to find its factor")
+//  for(let i = 1; i<=n; i++){
+//     if(n % i == 0){
+//         console.log(i)
+//     }
+//  }
+
+//-------------------------------------------------------------------------------------------------------------------------//
+
+ //Q31)- Print the sum of all factors of a number, 50 -> 1 + 2 + 5 + 10 + 25 = 43
+
+//  let n = +prompt("Enter number to find its factors for sum")
+//  let sum = 0;
+//  for(let i = 1; i<=n; i++){
+//     if(n % i == 0){
+//         sum += i;
+        
+//     }
+//  }
+// console.log(`sum of factor ${n} =  ${sum}`);
+
+//-----------------------------------------------------------------------------------------------------------------------//
+
+//Q32)- check if the numer is prime or not
+
+// let n = prompt("enter number to Check if the number is Prime or not ");
+// let flag = true;
+// for (let i = 2; i <= n / 2; i++) {
+//   if (n % i == 0) {
+//     flag = false;
+//     break;
+//   }
+// }
+// if (flag == true) {
+//   console.log(`given number ${n} is  Prime`);
+// } else {
+//   console.log(`given number ${n} is non Prime`);
+// }
+
+//-----------------------------------------------------------------------------------------------------------------------//
+
+//Q33)- Write a program to take two inputs a, b & find the value of  a raised to the power of b. 
+//	Ex - a = 2, b = 5
+//	OP - 2^5 = 32
+
+// let a = +prompt("enter a number  ");
+// let b = +prompt("enter b number ");
+// result = 1;
+// for (let i = 0; i < b; i++) {
+//   result *= a;
+// }
+// console.log(`${a} raised to the power of ${b} is ${result}`);
+
+//-----------------------------------------------------------------------------------------------------------------------//
+
+//Q34)- Seprate each digit of a number and print it on the new line ex - 123 
+//	    OP
+//		3
+//		2
+//		1
+
+let a = 123;
+while(a > 0) {
+    let rem = a % 10;
+    console.log(rem);    // print last digit
+    a = Math.floor(a/10);
+}
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------//
