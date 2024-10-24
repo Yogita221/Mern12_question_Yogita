@@ -453,13 +453,137 @@
 //		2
 //		1
 
-let a = 123;
-while(a > 0) {
-    let rem = a % 10;
-    console.log(rem);    // print last digit
-    a = Math.floor(a/10);
-}
+// let a = 123;
+// while(a > 0) {
+//     let rem = a % 10;
+//     console.log(rem);    // print last digit
+//     a = Math.floor(a/10);
+// }
 
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q35)- Sum of digits of a number, 936 = 18
+
+// let a = 936;
+// let sum =0
+// while(a> 0) {
+//     let rem = a % 10;
+//     sum += rem;
+//     a = Math.floor(a/10);
+    
+// }
+//     console.log(sum);
+
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q36)- Accept the number and it reverse number
+
+// let a = 123;
+// let rev = 0;
+// while(a>0) {
+//     rev=(rev*10) + (a%10);
+//     a = Math.floor(a/10);
+// }
+// console.log(rev);
+
+//----------------------------------------------------------------------------------------------------------------------//
+
+//Q37)- Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
+    //   Ex - 12321 - Rerverse - 12321
+
+    // let num = +prompt("Enter the number");
+    // let copy = num;
+    // let rev = 0;
+    // while(num > 0) {
+    //     rev=(rev * 10) + (num % 10);
+    //     num = Math.floor(num/10);
+    // }
+    // console.log(rev === copy ? "palinndrone" : "Not Palindrone")
 
 
 //-----------------------------------------------------------------------------------------------------------------------//
+
+//Q38)- Accept a number and check if it is a strong number or not (Sum of factorial of each digit)
+    //   Ex- 145 = 1! + 4! + 5! = 145
+
+// let a = 145;
+// let copy = a;
+// let sum = 0;
+// while(a>0){
+//     let rem = a % 10;
+//     let fact = 1;
+//     for(let i = 1; i <=rem; i++){
+//         fact *= i;        
+//     }
+//     sum +=fact;
+//     a = Math.floor(a/100);
+// }
+
+// console.log(sum === a? "strong ": "Not Strong");
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+//Q39)- Automorphic number 5 = 25 = 625 = 390625, 6=36, 76 = 5776
+
+// var n = 625;
+// var temp = n;
+// var sq = n*n;
+// var count = 0;
+
+// while ( n != 0) {
+//   count++; 
+//   n = Math.floor(n/10);
+
+// }
+// n = temp;
+// const result = sq % Math.pow(10,count);
+// console.log(result == n);
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+//Q40)- Print hello until user gives wrong input using do while
+
+ 
+
+
+//--------------------------------------------------------------------------------------------------------------------//
+
+//Q42)- Print Weekday using Switch
+
+// var day = +prompt("Enter the Number");
+// switch(day){
+//     case 1: {
+//         console.log('Monday')
+//         break;
+//     }
+//     case 2: {
+//         console.log('Tuesday')
+//         break;
+//     }  case 3: {
+//         console.log('Wednesday')
+//         break;
+//     }
+//     case 4: {
+//         console.log('Thursday')
+//         break;
+//     }
+//     case 5: {
+//         console.log('Friday')
+//         break;
+//     }
+//     case 6: {
+//         console.log('Saturday')
+//         break;
+//     }
+//     case 7: {
+//         console.log('Sunday')
+//         break;
+//     }
+//     default: {
+//         console.log('Invalid Input')
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------//
+
